@@ -46,6 +46,12 @@ npm run build
 
 在 `next.config.ts` 新增 `output: 'export'`，然後執行 `npm run build`，將 `out/` 部署至 Hosting。
 
+## 建立教師/幹部帳號
+
+1. 使用者先在網站登入（Email 或 Google）
+2. Firebase Console → Authentication → 複製該使用者的 UID
+3. 執行：`node scripts/init-admin-user.js <UID> teacher` 或 `staff`
+
 ## 專案結構
 
 ```
@@ -54,4 +60,9 @@ src/
 ├── components/    # 共用元件
 ├── context/       # AuthContext
 └── lib/           # firebase, utils
+
+scripts/
+├── migrate-sheets-to-firestore.js   # 試算表 → Firestore 遷移
+├── init-admin-user.js               # 設定 teacher/staff 角色
+└── data/                            # 遷移用 CSV 目錄
 ```
