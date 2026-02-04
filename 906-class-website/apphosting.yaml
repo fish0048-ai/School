@@ -1,6 +1,26 @@
 # Firebase App Hosting 設定
-# 環境變數請在 Firebase Console > App Hosting > 環境設定 中配置
+# Firebase 配置從 .env.local 複製，BUILD 與 RUNTIME 皆需
 runConfig: {}
+
+env:
+  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+    value: AIzaSyDD_LVP9WTmEJP1ug68ajrFqQufu65X_BA
+    availability: [BUILD, RUNTIME]
+  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    value: cish-906-school.firebaseapp.com
+    availability: [BUILD, RUNTIME]
+  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+    value: cish-906-school
+    availability: [BUILD, RUNTIME]
+  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+    value: cish-906-school.firebasestorage.app
+    availability: [BUILD, RUNTIME]
+  - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+    value: "795413031258"
+    availability: [BUILD, RUNTIME]
+  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
+    value: 1:795413031258:web:13c9916b84c07cd4dbeb63
+    availability: [BUILD, RUNTIME]
 
 # 建置時略過 ESLint，避免 CI 建置因 lint 失敗
 scripts:
