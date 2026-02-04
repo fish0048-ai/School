@@ -1,5 +1,8 @@
-import { Link, useLocation } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+'use client';
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useAuth } from '@/context/AuthContext';
 
 const tabs = [
   { path: '/', label: '首頁', icon: 'fa-home' },
@@ -20,7 +23,7 @@ const tabs = [
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  const location = useLocation();
+  const pathname = usePathname();
   const { user, signOut } = useAuth();
 
   return (
@@ -45,7 +48,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </button>
             ) : (
               <Link
-                to="/login"
+                href="/login"
                 className="px-3 py-1 rounded-lg text-sm font-medium bg-blue-500 text-white hover:bg-blue-600"
               >
                 登入
@@ -57,11 +60,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       <nav className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border border-slate-200 rounded-xl p-2 mb-6 overflow-x-auto flex gap-2 -mx-4 px-4 sm:mx-0">
         {tabs.map((tab) => {
-          const isActive = location.pathname === tab.path;
+          const isActive = pathname === tab.path;
           return (
             <Link
               key={tab.path}
-              to={tab.path}
+              href={tab.path}
               className={`whitespace-nowrap px-4 py-2 rounded-lg font-medium text-sm transition-all flex-shrink-0 ${
                 isActive
                   ? 'bg-blue-100 text-blue-600 font-bold'

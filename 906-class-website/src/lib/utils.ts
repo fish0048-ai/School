@@ -1,3 +1,4 @@
+// 工具函數
 export function escapeHtml(str: string): string {
   const map: Record<string, string> = {
     '&': '&amp;',
