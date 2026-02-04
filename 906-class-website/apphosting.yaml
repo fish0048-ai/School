@@ -22,6 +22,4 @@ env:
     value: 1:795413031258:web:13c9916b84c07cd4dbeb63
     availability: [BUILD, RUNTIME]
 
-# 建置時略過 ESLint，避免 CI 建置因 lint 失敗
-scripts:
-  buildCommand: next build --no-lint
+# 使用預設 next build，由 App Hosting 適配器處理（勿覆寫 buildCommand）
