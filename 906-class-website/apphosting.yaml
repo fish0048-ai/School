@@ -1,0 +1,3 @@
+# Firebase App Hosting 設定
+# 環境變數請在 Firebase Console > App Hosting > 環境設定 中配置
+runConfig: {}
