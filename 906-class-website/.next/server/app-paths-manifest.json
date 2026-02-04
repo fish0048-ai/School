@@ -1,6 +1,1 @@
-{
-  "/page": "app/page.js",
-  "/bulletin/page": "app/bulletin/page.js",
-  "/schedule/page": "app/schedule/page.js",
-  "/calendar/page": "app/calendar/page.js"
-}
+{}
