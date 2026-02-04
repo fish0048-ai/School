@@ -1,0 +1,33 @@
+---
+description: 程式思考用英文，註解與輸出用中文（含 commit）
+alwaysApply: true
+---
+
+# 語言與輸出規範
+
+## 內部思考與程式邏輯
+- 程式碼的變數名、函數名、技術術語保持英文
+- AI 推理、規劃、設計決策時使用英文思考與討論
+
+## 註解
+- 程式碼註解一律使用**繁體中文**
+- 含 JSDoc、TODO、說明性註解
+
+```typescript
+// ✅ 正確：載入公告列表並依日期排序
+const bulletins = await loadBulletins();
+
+// ❌ 錯誤：Load bulletins and sort by date
+```
+
+## 使用者可見內容
+- UI 文字、錯誤訊息、提示、文件說明：**繁體中文**
+- 含 README、使用說明、commit message
+
+## Git Commit
+- 一律使用**繁體中文**
+- 格式：`<type>: <subject>`
+- 範例：
+  - `feat: 新增公告篩選功能`
+  - `fix: 修正課表載入錯誤`
+  - `docs: 更新部署說明`
