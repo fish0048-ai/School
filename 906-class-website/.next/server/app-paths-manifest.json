@@ -1,19 +1,6 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/calendar/page": "app/calendar/page.js",
-  "/bulletin/page": "app/bulletin/page.js",
-  "/external-links/page": "app/external-links/page.js",
-  "/class-fund/page": "app/class-fund/page.js",
-  "/gallery/page": "app/gallery/page.js",
-  "/graffiti/page": "app/graffiti/page.js",
-  "/homework/page": "app/homework/page.js",
-  "/honor-roll/page": "app/honor-roll/page.js",
-  "/fortune/page": "app/fortune/page.js",
-  "/login/page": "app/login/page.js",
   "/page": "app/page.js",
-  "/polling/page": "app/polling/page.js",
+  "/bulletin/page": "app/bulletin/page.js",
   "/schedule/page": "app/schedule/page.js",
-  "/seating/page": "app/seating/page.js",
-  "/stories/page": "app/stories/page.js",
-  "/violations/page": "app/violations/page.js"
+  "/calendar/page": "app/calendar/page.js"
 }

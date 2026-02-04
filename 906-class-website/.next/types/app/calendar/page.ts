@@ -1,4 +1,4 @@
-// File: F:\School\906-class-website\src\app\calendar\page.tsx
+// File: f:\School\906-class-website\src\app\calendar\page.tsx
 import * as entry from '../../../../src/app/calendar/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
