@@ -1,0 +1,27 @@
+---
+description: Git commit 訊息必須使用繁體中文
+globs: "**"
+alwaysApply: true
+---
+
+# Git Commit 規範（強制）
+
+**所有 Git commit 訊息必須使用繁體中文。**
+
+格式：`<type>: <subject>`
+
+類型對照：
+- feat → 新功能
+- fix → 修正
+- docs → 文件
+- style → 格式
+- refactor → 重構
+- test → 測試
+- chore → 雜項
+
+範例：
+- `feat: 新增公告篩選功能`
+- `fix: 修正課表載入錯誤`
+- `chore: 更新依賴版本`
+
+**禁止使用英文撰寫 commit message。**
